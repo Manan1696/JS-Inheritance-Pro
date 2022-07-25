@@ -17,7 +17,7 @@ const parentProto= {
   
   
   const childProto = Object.create(parentProto);
-  childProto.initialise("uma","rangu",2000);
+  childProto.initialise("jhui","kandu",2001);
   console.log(childProto);
   childProto.calcAge();
 
@@ -77,14 +77,13 @@ function add(a){
 
 //Q4.Write a javascript program to retrieve all the names of object's own and inherited properties.
 
-function student(first, last, age, eye) {
-    this.firstName = first;
-    this.lastName = last;
-    this.age = age;
-    this.eyeColor = eye;
+function item1(fName,  gender,age,nationality ) {
+  this.fName = fName;
+  this.gender = gender;
+  this.age = age;
+  this.nationality = nationality;
 }
-  
-student.prototype.nationality = "English";
-const mySon = new student("kava", "ajay", 20, "blue");
-console.log(mySon);
-console.log("The nationality of my son is " + mySon.nationality);
+
+item1.prototype.nationality = "dutch";
+const item2 = new item1 ("juli", " female", "24", "indian");
+console.log(item2);
